@@ -18,4 +18,11 @@ public class CatcherController : MonoBehaviour {
 			catcherDisplay.OnChangeEggTotal (totalEgg);
 		}
 	}
+
+	void OnTriggerExit2D(Collider2D hit) {
+		if (hit.tag == "Egg") {
+			totalEgg--;
+			catcherDisplay.OnChangeEggTotal (totalEgg);
+		}
+	}
 }

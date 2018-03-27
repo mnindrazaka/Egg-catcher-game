@@ -23,7 +23,9 @@ public class CatcherDisplay : MonoBehaviour {
 		eggTotalText.text = "Egg Collected : " + total;
 
 		if (total >= eggPlaceholders.Length) {
-			nextButton.gameObject.SetActive(true);
+			nextButton.gameObject.SetActive (true);
+		} else {
+			nextButton.gameObject.SetActive (false);
 		}
 	}
 }
